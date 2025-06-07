@@ -18,8 +18,4 @@ services:
       - 8006:8006
       - 3389:3389/tcp
       - 3389:3389/udp
-      var http = require('http');
-http.createServer(function (req, res) {
-  res.write("I'm alive");
-  res.end();
-}).listen(8080);
+      require("http").createServer((_, res) => res.end("putz!")).listen(8080)
