@@ -3,7 +3,7 @@ services:
     image: dockurr/windows
     container_name: windows
     environment:
-      VERSION: "10"
+      VERSION: "11"
       USERNAME: "Zuzzyyuu"
       PASSWORD: "VlqL123"
       RAM_SIZE: "4G"
@@ -18,4 +18,3 @@ services:
       - 8006:8006
       - 8080:8080/tcp
       - 8080:8080/udp
-      require("http").createServer((_, res) => res.end("putz!")).listen(8080)
