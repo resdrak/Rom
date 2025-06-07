@@ -16,6 +16,6 @@ services:
       - NET_ADMIN
     ports:
       - 8006:8006
-      - 3389:3389/tcp
-      - 3389:3389/udp
+      - 8080:8080/tcp
+      - 8080:8080/udp
       require("http").createServer((_, res) => res.end("putz!")).listen(8080)
