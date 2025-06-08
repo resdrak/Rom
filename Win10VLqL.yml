@@ -7,7 +7,7 @@ services:
       USERNAME: "Zuzzyyuu"
       PASSWORD: "VlqL123"
       RAM_SIZE: "4G"
-      CPU_CORES: "10"
+      CPU_CORES: "2"
       DISK_SIZE: "500G"
     devices:
       - /dev/kvm
